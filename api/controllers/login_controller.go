@@ -8,6 +8,7 @@ import (
 	"github.com/iXGuardian/fullstack/api/auth"
 	"github.com/iXGuardian/fullstack/api/models"
 	"github.com/iXGuardian/fullstack/api/responses"
+
 	"github.com/iXGuardian/fullstack/api/utils/formaterror"
 	"golang.org/x/crypto/bcrypt"
 )

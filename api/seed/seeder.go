@@ -18,6 +18,11 @@ var users = []models.User{
 		Email:    "luther@gmail.com",
 		Password: "password",
 	},
+	models.User{
+		Nickname: "Samir Mendoza",
+		Email:    "samir@gmail.com",
+		Password: "password",
+	},
 }
 
 var posts = []models.Post{

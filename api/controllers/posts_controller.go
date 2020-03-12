@@ -146,11 +146,11 @@ func (server *Server) UpdatePost(w http.ResponseWriter, r *http.Request) {
 
 	postUpdated, err := postUpdate.UpdateAPost(server.DB)
 
-	if err != nil {
+	/* 	if err != nil {
 		formattedError := formaterror.FormatError(err.Error())
 		responses.ERROR(w, http.StatusInternalServerError, formattedError)
 		return
-	}
+	} */
 	responses.JSON(w, http.StatusOK, postUpdated)
 }
 

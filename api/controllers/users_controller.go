@@ -110,11 +110,11 @@ func (server *Server) UpdateUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	updatedUser, err := user.UpdateAUser(server.DB, uint32(uid))
-	if err != nil {
+	/* if err != nil {
 		formattedError := formaterror.FormatError(err.Error())
 		responses.ERROR(w, http.StatusInternalServerError, formattedError)
 		return
-	}
+	} */
 	responses.JSON(w, http.StatusOK, updatedUser)
 }
 
